@@ -32,6 +32,7 @@ class Main extends React.Component{
             <>
                 <div className="welcome class">Hello, This is {this.state.message}</div>
                 <div>
+                    {/* 하나의 컴포넌트에 문자열 값만 다르게 넘겨 줌으로써 컴포넌트 재사용 */}
                     {["React", "HTML", "CSS", "JavaScript"].map(message => (
                         this.renderButton(message)
                     ))}
